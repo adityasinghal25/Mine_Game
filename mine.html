@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mine game</title>
+    <script src="with_randoms.js"></script>
+</head>
+<style>
+    input[value]{
+        color: whitesmoke;
+    }
+</style>
+<body>
+    <h1 style="text-align: center;">Mine-Game</h1>
+    <div style="display: flex;justify-content: center;"><h2 id="h"></h2></div>
+    <div style="display: flex;justify-content: center;">
+        <div style="height: 80px;width: 80px;"><input type="button" id="t" value="0" style="height: 80px;width: 80px;"  onclick="show(0)"></div>
+        <div style="height: 80px;width: 80px;"><input type="button" id="t" value="1" style="height: 80px;width: 80px;" onclick="show(1)"></div>
+        <div style="height: 80px;width: 80px;"><input type="button" id="t" value="2" style="height: 80px;width: 80px;" onclick="show(2)"></div>
+        <div style="height: 80px;width: 80px;"><input type="button" id="t" value="3" style="height: 80px;width: 80px;" onclick="show(3)"></div>
+        <div style="height: 80px;width: 80px;"><input type="button" id="t" value="4" style="height: 80px;width: 80px;" onclick="show(4)"></div>
+        <div style="height: 80px;width: 80px;"><input type="button" id="t" value="5" style="height: 80px;width: 80px;" onclick="show(5)"></div>
+    </div>
+    <div style="display: flex;justify-content: center;">
+        <div style="height: 80px;width: 80px;"><input type="button" id="t" value="6" style="height: 80px;width: 80px;" onclick="show(6)"></div>
+        <div style="height: 80px;width: 80px;"><input type="button" id="t" value="7" style="height: 80px;width: 80px;" onclick="show(7)"></div>
+        <div style="height: 80px;width: 80px;"><input type="button" id="t" value="8" style="height: 80px;width: 80px;" onclick="show(8)"></div>
+        <div style="height: 80px;width: 80px;"><input type="button" id="t" value="9" style="height: 80px;width: 80px;" onclick="show(9)"></div>
+        <div style="height: 80px;width: 80px;"><input type="button" id="t" value="10" style="height: 80px;width: 80px;" onclick="show(10)"></div>
+        <div style="height: 80px;width: 80px;"><input type="button" id="t" value="11" style="height: 80px;width: 80px;" onclick="show(11)"></div>
+    </div>
+    <div style="display: flex;justify-content: center;">
+        <div style="height: 80px;width: 80px;"><input type="button" id="t" value="12" style="height: 80px;width: 80px;" onclick="show(12)"></div>
+        <div style="height: 80px;width: 80px;"><input type="button" id="t" value="13" style="height: 80px;width: 80px;" onclick="show(13)"></div>
+        <div style="height: 80px;width: 80px;"><input type="button" id="t" value="14" style="height: 80px;width: 80px;" onclick="show(14)"></div>
+        <div style="height: 80px;width: 80px;"><input type="button" id="t" value="15" style="height: 80px;width: 80px;" onclick="show(15)"></div>
+        <div style="height: 80px;width: 80px;"><input type="button" id="t" value="16" style="height: 80px;width: 80px;" onclick="show(16)"></div>
+        <div style="height: 80px;width: 80px;"><input type="button" id="t" value="17" style="height: 80px;width: 80px;" onclick="show(17)"></div>
+    </div>
+    <div style="display: flex;justify-content: center;">
+        <div style="height: 80px;width: 80px;"><input type="button" id="t" value="18" style="height: 80px;width: 80px;" onclick="show(18)"></div>
+        <div style="height: 80px;width: 80px;"><input type="button" id="t" value="19" style="height: 80px;width: 80px;" onclick="show(19)"></div>
+        <div style="height: 80px;width: 80px;"><input type="button" id="t" value="20" style="height: 80px;width: 80px;" onclick="show(20)"></div>
+        <div style="height: 80px;width: 80px;"><input type="button" id="t" value="21" style="height: 80px;width: 80px;" onclick="show(21)"></div>
+        <div style="height: 80px;width: 80px;"><input type="button" id="t" value="22" style="height: 80px;width: 80px;" onclick="show(22)"></div>
+        <div style="height: 80px;width: 80px;"><input type="button" id="t" value="23" style="height: 80px;width: 80px;" onclick="show(23)"></div>
+    </div>
+    <div style="display: flex;justify-content: center;">
+        <div style="height: 80px;width: 80px;"><input type="button" id="t" value="24" style="height: 80px;width: 80px;" onclick="show(24)"></div>
+        <div style="height: 80px;width: 80px;"><input type="button" id="t" value="25" style="height: 80px;width: 80px;" onclick="show(25)"></div>
+        <div style="height: 80px;width: 80px;"><input type="button" id="t" value="26" style="height: 80px;width: 80px;" onclick="show(26)"></div>
+        <div style="height: 80px;width: 80px;"><input type="button" id="t" value="27" style="height: 80px;width: 80px;" onclick="show(27)"></div>
+        <div style="height: 80px;width: 80px;"><input type="button" id="t" value="28" style="height: 80px;width: 80px;" onclick="show(28)"></div>
+        <div style="height: 80px;width: 80px;"><input type="button" id="t" value="29" style="height: 80px;width: 80px;" onclick="show(29)"></div>
+    </div>
+    <div style="display: flex;justify-content: center;">
+        <div style="height: 80px;width: 80px;"><input type="button" id="t" value="30" style="height: 80px;width: 80px;" onclick="show(30)"></div>
+        <div style="height: 80px;width: 80px;"><input type="button" id="t" value="31" style="height: 80px;width: 80px;" onclick="show(31)"></div>
+        <div style="height: 80px;width: 80px;"><input type="button" id="t" value="32" style="height: 80px;width: 80px;" onclick="show(32)"></div>
+        <div style="height: 80px;width: 80px;"><input type="button" id="t" value="33" style="height: 80px;width: 80px;" onclick="show(33)"></div>
+        <div style="height: 80px;width: 80px;"><input type="button" id="t" value="34" style="height: 80px;width: 80px;" onclick="show(34)"></div>
+        <div style="height: 80px;width: 80px;"><input type="button" id="t" value="35" style="height: 80px;width: 80px;" onclick="show(35)"></div>
+    </div><br><br>
+    <div style="display: flex;justify-content: center;"><input type="button" value="RESET" onclick="re()" style="color: black;"></div>
+    <div style="display: flex;justify-content: center;"><h2 style="color: red;" id="m"></h2></div>
+</body>
+</html>
